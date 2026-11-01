@@ -14,4 +14,4 @@ COPY src ./src
 
 EXPOSE 8000
 
-CMD ["uv", "run", "--no-sync", "fastapi", "dev", "src/main.py", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uv", "run", "--no-sync", "fastapi", "run", "src/main.py", "--host", "0.0.0.0", "--port", "8000"]
