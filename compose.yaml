@@ -8,3 +8,10 @@ services:
     env_file:
       - .env
     restart: unless-stopped
+    networks:
+      - default
+      - coolify
+
+networks:
+  coolify:
+    external: true
